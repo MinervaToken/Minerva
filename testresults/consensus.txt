@@ -1,0 +1,21 @@
+  Contract: Consensus
+    -- ADD/REMOVE VOTER FUNCTIONALITY --
+      √ should fail if not a registered voter
+      √ should fail to add an already registered voter
+      √ should cast votes and add voter (111ms)
+      √ should cast votes and fail because new voter is already registered
+      √ should cast votes and remove voter (114ms)
+      √ cast votes and remove voter nonvoter for next tests (69ms)
+      √ should fail to remove a voter if we only have 2
+      √ should fail when newly removed voter tries to vote
+    -- TOKEN INTERACTION FUNCTIONS --
+      √ change owner of minerva token to nonvoter (72ms)
+      √ change owner should fail (45ms)
+      √ change owner back to consensus
+      √ change bank address of minerva token to nonvoter (77ms)
+      √ change voting address of minerva token to nonvoter (71ms)
+      √ change tax of minerva token to 50 (80ms)
+      √ add new partner (nonvoter) to minerva token (67ms)
+
+
+  15 passing (3s)

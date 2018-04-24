@@ -1,0 +1,36 @@
+    √ should have no tokens for owner
+    -- MINTING --
+      √ should mint 1000 tokens and update total supply to 1000
+      √ should mint 1000 tokens to receiver
+      √ should fail minting if not minter (revert)
+    -- APPROVING AND TRANSFERING TOKENS --
+      √ should transfer 500 from receiver to owner (47ms)
+      √ should fail transfering tokens user doesnt have
+      √ should fail when owner tries to transferFrom without approval
+      √ receiver approves owner to spend 500 tokens -> owner transfer 250 to itself (49ms)
+    -- BURNING TOKENS --
+      √ receiver should burn 500 tokens
+      √ should fail burning tokens user doesnt have
+      √ receiver should burn 500 -> check total supply
+      √ owner approves receiver 50 tokens, receiver burns 50 for owner (48ms)
+      √ owner approves receiver 50 tokens, receiver burns 50 for owner -> check total supply (56ms)
+    -- PARTNER FUNCTIONALITY --
+      √ add partner (39ms)
+      √ fail adding partner (not owner)
+      √ direct calls to add tokens should fail
+      √ change reward rate to 5%
+      √ should fail to change reward rate by non-owner
+      √ transfer 200 tokens to partner and make sure reward rate creates the right amount of bonus tokens
+    -- OWNER UPDATING FUNCTIONALITY --
+      √ change owner (44ms)
+      √ fail adding partner (not owner)
+      √ change owner and fail on second try (since owner changed)
+      √ change voting address
+      √ change bank address
+    -- INDIVIDUAL PARTNERSHIP FUNCTIONALITY --
+      √ update partners individual reward rate to 5%
+      √ mint 1000 more tokens for receiver
+      √ transfer 200 tokens to partner and make sure reward rate creates the right amount of bonus tokens
+    -- TAX RATE FUNCTIONALITY --
+      √ change tax rate to 5%
+      √ transfer 200 tokens to partner and make sure reward rate creates the right amount of bonus tokens (38ms)
