@@ -1,1 +1,1 @@
-# Minerva2018Private
+# Minerva Token ERC20 Contracts
